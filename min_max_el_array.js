@@ -21,3 +21,4 @@ array2_3.sort((x1, x2)=>x1-x2)
 // let max_el3 = array2_3[array2_3.length-1]
 let max_el3 = array2_3.pop()
 console.log(max_el3)
+console.log(Math.max(...array2_3))
