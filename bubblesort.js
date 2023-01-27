@@ -1,3 +1,4 @@
+// пузырьковая сортировка
 const arrayBubbleSort = [1, 9, 2, 5, 3, 6]
 function bubbleSort(arr) {
   for (let i = 0; i < arr.lenght; i++) {
