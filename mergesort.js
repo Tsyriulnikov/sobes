@@ -1,7 +1,6 @@
 //сортировка слиянием
 function mergeSort(arr) {
-if (arr.length<2) return arr;
-function mergeSort(arr) {
+
     if (arr.length < 2) return arr;
   
     const middleIndex = ~~(arr.length / 2);
