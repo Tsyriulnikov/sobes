@@ -17,6 +17,16 @@ console.log(obj.prop3());
 
 //создание объекта (create object instance)
 //1
-let object = new Object();
+let object1 = new Object();
 //2
-object = Object.create(null);
+let object2 = Object.create(null);
+//3
+let object3 = {};
+//4
+function Person(name) {
+  let object = {};
+  object.name = name;
+  object.age = 21;
+  return object;
+}
+var object4 = new Person("Sudheer");
