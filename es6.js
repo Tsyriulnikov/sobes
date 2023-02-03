@@ -23,10 +23,27 @@ let object2 = Object.create(null);
 //3
 let object3 = {};
 //4
-function Person(name) {
+function Person4(name) {
   let object = {};
   object.name = name;
   object.age = 21;
   return object;
 }
-var object4 = new Person("Sudheer");
+var object4 = new Person4("Sudheer");
+//5
+function Person5() {}
+Person.prototype.name = "Sudheer";
+let object5 = new Person5();
+
+//6
+class Person6 {
+  constructor(name) {
+    this.name = name;
+  }
+}
+var object6 = new Person6("Sudheer");
+
+//7
+const object7 = new (function () {
+  this.name = "Sudheer";
+})();
