@@ -29,4 +29,12 @@ class Node {
     }
   }
   
+  // пример использования
+  const root = new Node(2)
+  root.insert(1)
+  root.insert(3)
+  root.insert(0)
+  console.log(root.left.left.data === 0) // true
   
+  console.log(root.search(3).data) // 4
+  console.log(root.search(4)) // null
