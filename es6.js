@@ -47,3 +47,18 @@ var object6 = new Person6("Sudheer");
 const object7 = new (function () {
   this.name = "Sudheer";
 })();
+
+//// 333 345
+function a(x) {
+  x++;
+  return function () {
+    console.log(++x);
+  };
+}
+a(1);
+a(1);
+a(1);
+let x = a(1);
+x();
+x();
+x()
